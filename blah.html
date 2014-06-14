@@ -9,7 +9,7 @@
 
 	<body>
 		<div id="sketch">
-			<canvas id="paint" style="background-color:white; border: 2px dashed #000000;">
+			<canvas id="paint" style="background-color:black; border: 2px solid #d3d3d3;">
 				<script type="text/javascript">
 		          var canvas = document.querySelector('#paint');
 		          var ctx = canvas.getContext('2d');
@@ -30,7 +30,7 @@
 		          ctx.lineWidth = 2;
 		          ctx.lineJoin = 'round';
 		          ctx.lineCap = 'round';
-		          ctx.strokeStyle = 'blue';
+		          ctx.strokeStyle = 'white';
 		           
 		          canvas.addEventListener('mousedown', function(e) {
 		              ctx.beginPath();
