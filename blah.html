@@ -1,22 +1,23 @@
-html>
+<html>
   	<head>
+  		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
     	<div id="Header">
-			<h1 style="font-family:Arial;font-size:20px;color:#000099;margin-left:60px;margin-top:10px;text-align:center">This is the drawing app</h1>
+    		<link href="main.css" rel="stylesheet">
+			<h1 class="titleblah"> This is the drawing app </h1>
 		</div>
 	</head>
 
-	<body style="background-color:#00FFCC;">
+	<body>
 		<div id="sketch">
-			<canvas id="paint" width="1200px" height="700px" style="background-color:white;border: 2px dashed #000000; margin-left: 90px;">
+			<canvas id="paint" style="background-color:white; border: 2px dashed #000000;">
 				<script type="text/javascript">
 		          var canvas = document.querySelector('#paint');
 		          var ctx = canvas.getContext('2d');
 		           
 		          var sketch = document.querySelector('#sketch');
-		          var sketch_style = getComputedStyle(sketch);
-		          canvas.width = parseInt(sketch_style.getPropertyValue('width'));
+		          var sketch_style = getComputedStyle(sketch); 
+				canvas.width = parseInt(sketch_style.getPropertyValue('width'));
 		          canvas.height = parseInt(sketch_style.getPropertyValue('height'));
-
 		          var mouse = {x: 0, y: 0};
 		           
 		          /* Mouse Capturing Work */
@@ -26,7 +27,7 @@ html>
 		          }, false);
 		          
 		          /* Drawing on Paint App */
-		          ctx.lineWidth = 5;
+		          ctx.lineWidth = 2;
 		          ctx.lineJoin = 'round';
 		          ctx.lineCap = 'round';
 		          ctx.strokeStyle = 'blue';

@@ -1,0 +1,16 @@
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+	font-size: 50px;
+    color:#FFFFFF;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+canvas {width:98vw; height:80vh;}
+body{
+
+	background-image: url('http://georgesrestaurant.com/wp-content/uploads/2010/07/Chalkboard.jpg')
+
+	}
+
