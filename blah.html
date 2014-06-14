@@ -1,4 +1,4 @@
-<html>
+html>
   	<head>
     	<div id="Header">
 			<h1 style="font-family:Arial;font-size:20px;color:#000099;margin-left:60px;margin-top:10px;text-align:center">This is the drawing app</h1>
@@ -11,51 +11,25 @@
 				<script type="text/javascript">
 		          var canvas = document.querySelector('#paint');
 		          var ctx = canvas.getContext('2d');
-<<<<<<< HEAD
-
-=======
 		           
->>>>>>> FETCH_HEAD
 		          var sketch = document.querySelector('#sketch');
 		          var sketch_style = getComputedStyle(sketch);
 		          canvas.width = parseInt(sketch_style.getPropertyValue('width'));
 		          canvas.height = parseInt(sketch_style.getPropertyValue('height'));
 
 		          var mouse = {x: 0, y: 0};
-<<<<<<< HEAD
-
-=======
 		           
->>>>>>> FETCH_HEAD
 		          /* Mouse Capturing Work */
 		          canvas.addEventListener('mousemove', function(e) {
 		            mouse.x = e.pageX - this.offsetLeft;
 		            mouse.y = e.pageY - this.offsetTop;
 		          }, false);
-<<<<<<< HEAD
-
-=======
 		          
->>>>>>> FETCH_HEAD
 		          /* Drawing on Paint App */
 		          ctx.lineWidth = 5;
 		          ctx.lineJoin = 'round';
 		          ctx.lineCap = 'round';
 		          ctx.strokeStyle = 'blue';
-<<<<<<< HEAD
-
-		          canvas.addEventListener('mousedown', function(e) {
-		              ctx.beginPath();
-		              ctx.moveTo(mouse.x, mouse.y);
-
-		              canvas.addEventListener('mousemove', onPaint, false);
-		          }, false);
-
-		          canvas.addEventListener('mouseup', function() {
-		              canvas.removeEventListener('mousemove', onPaint, false);
-		          }, false);
-
-=======
 		           
 		          canvas.addEventListener('mousedown', function(e) {
 		              ctx.beginPath();
@@ -68,7 +42,6 @@
 		              canvas.removeEventListener('mousemove', onPaint, false);
 		          }, false);
 		           
->>>>>>> FETCH_HEAD
 		          var onPaint = function() {
 		              ctx.lineTo(mouse.x, mouse.y);
 		              ctx.stroke();
@@ -77,8 +50,4 @@
 			</canvas>
 		</div>
   	</body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> FETCH_HEAD
